@@ -2,28 +2,39 @@ import React from "react";
 import styled from "styled-components";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import LinkedIn from "./LinkedIn";
+import Logo from "./Logo";
 import "./NavBar.scss";
 const Container = styled.div`
-  width: 45%;
   font-size: 1em;
   font-weight: bold;
   color: white;
-  display: inline-block;
-  margin-right: auto;
   font-family: "Work Sans";
+  width: 45%;
 `;
 
 const ContainerRight = styled.div`
-  width: 5%;
+  width: 45%;
   font-size: 1.2em;
   color: white;
-  background: red;
   margin-left: auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 12px;
+  padding-right: 40px;
 `;
 const Home = styled.div`
   width: 5%;
-  display: inline-block;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  height: 20px;
+  margin: auto;
+  justify-content: center;
+  width: 28px;
+  z-index: 10;
+  padding-left: 4%;
 `;
 const List = styled.ul`
   list-style: none;
@@ -51,21 +62,11 @@ function NavBar(props) {
           </li>
         </List>
       </Container>
-      <Home>hi</Home>
+      <Home>
+        <Logo></Logo>
+      </Home>
       <ContainerRight>
-        <List className="header">
-          <li>
-            {/* <Player
-              autoplay
-              src="https://assets5.lottiefiles.com/packages/lf20_b7o3uner.json"
-              style={{ height: "50px", width: "50px" }}
-              hover={true}
-            ></Player>
-             */}
-
-            <LinkedIn></LinkedIn>
-          </li>
-        </List>
+        <LinkedIn></LinkedIn>
       </ContainerRight>
     </div>
   );

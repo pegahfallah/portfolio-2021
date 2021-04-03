@@ -1,13 +1,17 @@
 a {
-  color: #fff;
   display: inline-block;
   position: relative;
-  color: white;
+  color: #f9f6ed;
   text-decoration: none;
 }
 .container {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  top: 0;
+  position: relative;
+  height: 50px;
+  padding-top: 10px;
 }
 li {
   margin-right: 40px;
