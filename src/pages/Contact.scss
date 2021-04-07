@@ -1,0 +1,13 @@
+.btn {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+  font-family: "Raleway";
+  color: white;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  background-color: rgba(146, 148, 248, 0);
+}

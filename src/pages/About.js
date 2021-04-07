@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 // import "./About.scss";
 import styled from "styled-components";
 import NavBar from "../components/NavBar";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Slide from "react-reveal/Fade";
 import Experience from "../components/Experience";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { Link } from "react-scroll";
+
 const Container = styled.div`
   margin: auto;
-  height: 100vh;
+  height: 96vh;
   display: flex;
   flex-direction: row;
   @media only screen and (max-width: 600px) {
@@ -118,6 +120,15 @@ export default function About() {
           </MarginContainer>
         </RightContainer>
       </Container>
+      <Link to="projects" spy={true} smooth={true} offset={50} duration={800}>
+        <Player
+          autoplay
+          src="https://assets2.lottiefiles.com/temp/lf20_J1XkLr.json"
+          style={{ height: "50px", width: "50px" }}
+          seek
+          loop
+        ></Player>
+      </Link>
     </>
   );
 }

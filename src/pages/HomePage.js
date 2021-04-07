@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 
 const Container = styled.div`
   margin: auto;
+  padding-top: 4.5%;
 
   @media only screen and (max-width: 600px) {
     margin-top: 15%;

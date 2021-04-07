@@ -4,7 +4,8 @@ import { Switch, Route } from "react-router";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
-
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,8 @@ function App() {
       <NavBar></NavBar>
       <HomePage id="home"></HomePage>
       <About id="about"></About>
+      <Projects id="projects"></Projects>
+      <Contact id="contact"></Contact>
     </div>
   );
 }
