@@ -9,24 +9,27 @@ import { PhoneCall } from "@styled-icons/boxicons-solid/PhoneCall";
 const LinkedInIcon = styled(LinkedinWithCircle)`
   width: 60px;
   color: white;
+  margin: auto;
 `;
 const EmailIcon = styled(MailWithCircle)`
   width: 60px;
   color: white;
+  margin: auto;
 `;
 const PhoneCallIcon = styled(PhoneCall)`
   width: 60px;
   color: white;
+  margin: auto;
 `;
 
 const Container = styled.div`
   margin: auto;
-  height: 100vh;
+  height: 50vh;
   margin-left: 8%;
   margin-right: 8%;
-
+  display: flex;
+  flex-direction: column;
   @media only screen and (max-width: 600px) {
-    flex-direction: column;
   }
 `;
 
@@ -46,7 +49,11 @@ const Content = styled.div`
   display: flex;
   flex-direction: row;
 `;
-const TitleContainer = styled.div``;
+const TitleContainer = styled.div`
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+`;
 
 const Title = styled.p`
   font-size: 20px;
@@ -68,6 +75,7 @@ const Text = styled.a`
   text-align: left;
   text-align: left;
   text-decoration: none;
+  margin: auto;
 `;
 const Label = styled.p`
   font-size: 16px;
@@ -101,6 +109,8 @@ const Button = styled.button`
   border-radius 25px;
   border: 1px solid white;
   margin-top: 5%;
+  margin: auto;
+
 `;
 const Message = styled.textarea`
   padding: 16px;
@@ -149,9 +159,20 @@ function Contact(props) {
           Resume
         </Text>
       </Button>
-      <LinkedInIcon></LinkedInIcon>
-      <EmailIcon></EmailIcon>
-      <PhoneCallIcon></PhoneCallIcon>
+      <a href="https://www.linkedin.com/in/pegah-fallah/" target="_blank">
+        <LinkedInIcon></LinkedInIcon>
+      </a>
+      <TitleContainer>
+        {/* <EmailIcon></EmailIcon> */}
+        <Text
+        //   target="_blank"
+        //   href="https://docs.google.com/document/d/1Em-e7OOJIPWYti-UhfoFr8wu-OXrCmk6JmqR3OeHUFQ/edit?usp=sharing"
+        >
+          pegahfallah@outlook.com
+        </Text>{" "}
+        <Text> 4167387278</Text>
+      </TitleContainer>
+      <TitleContainer>{/* <PhoneCallIcon></PhoneCallIcon> */}</TitleContainer>
       {/* <Card>
         <TextTitle>Say Hello</TextTitle>
 

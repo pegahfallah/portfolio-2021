@@ -73,6 +73,7 @@ function Projects(props) {
   return (
     <Container id="projects">
       <TextTitle>✨ Projects</TextTitle>
+
       <Content>
         <CardContainer>
           <Card className="card">
