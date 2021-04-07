@@ -52,6 +52,7 @@ function LinkedIn() {
         isStopped={isStopped}
         isPaused={isPaused}
       />
+      {/* <a href="../ target="_blank"> */}
     </div>
   );
   //   }, [isStopped, isPaused, handleStop, handlePlay, handlePause]);

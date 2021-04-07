@@ -1,23 +1,30 @@
-a {
+.nav {
   display: inline-block;
   position: relative;
   color: #f9f6ed;
   text-decoration: none;
 }
+
+.nav:hover {
+  color: #f497da;
+}
+
 .container {
   display: flex;
   flex-direction: row;
-  width: 100vw;
   top: 0;
-  position: relative;
-  height: 50px;
+  height: 6%;
   padding-top: 10px;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: #111111;
 }
 li {
   margin-right: 40px;
 }
 /*effect-underline*/
-a:after {
+.nav:after {
   content: "";
   position: absolute;
   left: 0;
@@ -33,8 +40,9 @@ a:after {
   transform: scale(0, 1);
 }
 
-a:hover:after {
+.nav:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+  color: #f497da;
 }

@@ -4,6 +4,7 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import LinkedIn from "./LinkedIn";
 import Logo from "./Logo";
 import "./NavBar.scss";
+import { Link } from "react-scroll";
 const Container = styled.div`
   font-size: 1em;
   font-weight: bold;
@@ -42,8 +43,6 @@ const List = styled.ul`
   flex-direction: row;
 `;
 
-const Link = styled.a``;
-
 function NavBar(props) {
   const player = React.createRef(); // initialize your ref
 
@@ -52,13 +51,40 @@ function NavBar(props) {
       <Container>
         <List className="header">
           <li>
-            <a href="/project">About</a>
+            <Link
+              className="nav"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={800}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <a href="/project">Projects</a>
+            <Link
+              className="nav"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={800}
+            >
+              Projects
+            </Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link
+              className="nav"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={800}
+            >
+              Contact
+            </Link>
           </li>
         </List>
       </Container>
@@ -66,7 +92,9 @@ function NavBar(props) {
         <Logo></Logo>
       </Home>
       <ContainerRight>
-        <LinkedIn></LinkedIn>
+        <a target="_blank" href="https://www.linkedin.com/in/pegah-fallah">
+          <LinkedIn></LinkedIn>
+        </a>
       </ContainerRight>
     </div>
   );
