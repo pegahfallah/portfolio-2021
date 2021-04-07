@@ -12,8 +12,18 @@ const Container = styled.div`
   height: 96vh;
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
+    margin-top: 500px;
+
     flex-direction: column;
+    margin-bottom: 60%;
+    padding-bottom: 30%;
+  }
+`;
+
+const Scroll = styled.div`
+  @media only screen and (max-width: 700px) {
+    display: none;
   }
 `;
 const LeftContainer = styled.div`
@@ -31,6 +41,8 @@ const RightContainer = styled.div`
   padding-left 20%;
   @media only screen and (max-width: 600px) {
     width: 100%;
+    margin-bottom: 40%;
+
   }
 `;
 const MarginContainer = styled.div`
@@ -120,15 +132,17 @@ export default function About() {
           </MarginContainer>
         </RightContainer>
       </Container>
-      <Link to="projects" spy={true} smooth={true} offset={50} duration={800}>
-        <Player
-          autoplay
-          src="https://assets2.lottiefiles.com/temp/lf20_J1XkLr.json"
-          style={{ height: "50px", width: "50px" }}
-          seek
-          loop
-        ></Player>
-      </Link>
+      <Scroll>
+        <Link to="projects" spy={true} smooth={true} offset={50} duration={800}>
+          <Player
+            autoplay
+            src="https://assets2.lottiefiles.com/temp/lf20_J1XkLr.json"
+            style={{ height: "50px", width: "50px" }}
+            seek
+            loop
+          ></Player>
+        </Link>
+      </Scroll>
     </>
   );
 }

@@ -8,13 +8,22 @@ const Container = styled.div`
   margin-left: 8%;
   margin-right: 8%;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 500px;
+
+    padding-bottom: 70%;
   }
 `;
 
 const CardContainer = styled.div`
   width: 30%;
+  @media only screen and (max-width: 700px) {
+    width: 50%;
+  }
 `;
 const Card = styled.div`
   background: #2e2c2f;
@@ -26,6 +35,13 @@ const Card = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 700px) {
+    margin-top: 20%;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const TitleContainer = styled.div``;
 
@@ -48,7 +64,6 @@ const TextTitle = styled.h2`
 const Text = styled.p`
   color: white;
   text-align: left;
-  text-align: left;
 `;
 const SubTitle = styled.p`
   font-size: 20px;
@@ -56,6 +71,8 @@ const SubTitle = styled.p`
   text-align: left;
   padding-top: 16px;
   margin: 0;
+  @media only screen and (max-width: 700px) {
+  }
 `;
 
 const Link = styled.a``;

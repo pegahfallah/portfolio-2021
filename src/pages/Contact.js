@@ -29,7 +29,10 @@ const Container = styled.div`
   margin-right: 8%;
   display: flex;
   flex-direction: column;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
+    margin-top: 500px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 `;
 
@@ -110,8 +113,11 @@ const Button = styled.button`
   border: 1px solid white;
   margin-top: 5%;
   margin: auto;
-
-`;
+  @media only screen and (max-width: 700px) {
+    width: 50%;
+margin-top: 50%;
+  }
+    `;
 const Message = styled.textarea`
   padding: 16px;
   width: 80%;
