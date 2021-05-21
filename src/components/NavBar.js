@@ -36,6 +36,9 @@ const Home = styled.div`
   width: 28px;
   z-index: 10;
   padding-left: 4%;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 const List = styled.ul`
   list-style: none;

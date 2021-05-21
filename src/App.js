@@ -15,9 +15,6 @@ function App() {
       </Switch> */}
       <NavBar></NavBar>
       <HomePage id="home"></HomePage>
-      <About id="about"></About>
-      <Projects id="projects"></Projects>
-      <Contact id="contact"></Contact>
     </div>
   );
 }

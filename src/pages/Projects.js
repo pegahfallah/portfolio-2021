@@ -4,25 +4,22 @@ import styled from "styled-components";
 import "./Projects.scss";
 const Container = styled.div`
   margin: auto;
-  height: 100vh;
   margin-left: 8%;
   margin-right: 8%;
+  display: flex;
+  flex-direction: column;
 
-  @media only screen and (max-width: 700px) {
-    flex-direction: column;
-    justify-content: center;
+  @media only screen and (max-width: 960px) {
     margin: auto;
     width: 100%;
-    margin-top: 500px;
-
-    padding-bottom: 70%;
   }
 `;
 
 const CardContainer = styled.div`
   width: 30%;
-  @media only screen and (max-width: 700px) {
-    width: 50%;
+  margin: 8px;
+  @media only screen and (max-width: 980px) {
+    width: 100%;
   }
 `;
 const Card = styled.div`
@@ -30,40 +27,42 @@ const Card = styled.div`
   border-radius: 25px;
   padding: 16px;
   width: fit-content;
+  @media only screen and (max-width: 980px) {
+    margin: auto;
+  }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: 700px) {
-    margin-top: 20%;
+  @media only screen and (max-width: 980px) {
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
   }
 `;
-const TitleContainer = styled.div``;
-
-const Title = styled.h5`
-  padding: 16px;
-  font-size: 20px;
-  background: -webkit-linear-gradient(left, #fb4d3d, #ef476f);
-  background: -o-linear-gradient(right, #fb4d3d, #ef476f);
-  background: -moz-linear-gradient(right, #fb4d3d, #ef476f);
-  background: linear-gradient(to right, #fb4d3d, #ef476f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+const TitleContainer = styled.div`
+  @media only screen and (max-width: 960px) {
+    padding-left: 4%;
+    text-align: center;
+  }
 `;
+
 const TextTitle = styled.h2`
   color: white;
   text-align: left;
-  margin-bottom: 5%;
-  padding-top: 10%;
+  margin-bottom: 4%;
+  @media only screen and (max-width: 960px) {
+    text-align: center;
+  }
 `;
 const Text = styled.p`
   color: white;
   text-align: left;
+  @media only screen and (max-width: 960px) {
+    text-align: center;
+  }
 `;
 const SubTitle = styled.p`
   font-size: 20px;
@@ -71,17 +70,12 @@ const SubTitle = styled.p`
   text-align: left;
   padding-top: 16px;
   margin: 0;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 960px) {
+    text-align: center;
   }
 `;
 
 const Link = styled.a``;
-
-const Logo = styled.img`
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-`;
 
 const Image = styled.img`
   border-radius: 20px;
@@ -132,28 +126,22 @@ function Projects(props) {
           <TitleContainer>
             <SubTitle> Vaccine Passport</SubTitle>
             <Text>
-              Android application development, Hedera Hashgraph tokenization
-              service, file service
+              What I learned: Android application development, Hedera Hashgraph
+              tokenization service, file service
             </Text>
           </TitleContainer>
         </CardContainer>
-        {/* <CardContainer>
+        <CardContainer>
           <Card className="card">
-            <a
-              href="https://www.youtube.com/watch?v=CNVPAGsSwdY"
-              target="_blank"
-            >
-              <Image src="./vaccine.png" width="250px" height="240px"></Image>
+            <a href="https://vagon.tech" target="_blank">
+              <Image src="./vagon.png" width="250px" height="240px"></Image>
             </a>
           </Card>
           <TitleContainer>
-            <SubTitle>More</SubTitle>
-            <Text>
-              Android application development, Hedera Hashgraph tokenization
-              service, file service
-            </Text>
+            <SubTitle> Vagon.tech</SubTitle>
+            <Text>What I learned: Vue.JS, Nuxt.js, Golang, CockroachDB</Text>
           </TitleContainer>
-        </CardContainer> */}
+        </CardContainer>
       </Content>
     </Container>
   );

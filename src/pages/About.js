@@ -9,40 +9,41 @@ import { Link } from "react-scroll";
 
 const Container = styled.div`
   margin: auto;
-  height: 96vh;
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: 700px) {
-    margin-top: 500px;
-
+  padding-top: 10%;
+  margin-bottom: 5%;
+  @media only screen and (max-width: 960px) {
     flex-direction: column;
-    margin-bottom: 60%;
-    padding-bottom: 30%;
   }
 `;
 
-const Scroll = styled.div`
-  @media only screen and (max-width: 700px) {
-    display: none;
+const Scroll = styled.div``;
+
+const AboutPage = styled.div`
+  @media only screen and (max-width: 960px) {
+    margin-bottom: 40%;
+  }
+  @media only screen and (max-width: 800px) {
+    padding-bottom: 200px;
   }
 `;
+
 const LeftContainer = styled.div`
   width: 50%;
   display: flex;
-  margin-top: 10%;
   flex-direction: column;
-  @media only screen and (max-width: 600px) {
+
+  @media only screen and (max-width: 960px) {
     width: 100%;
   }
 `;
 const RightContainer = styled.div`
   width: 50%;
-  margin-top: 10%;
-  padding-left 20%;
-  @media only screen and (max-width: 600px) {
+  padding-left 10%;
+ @media only screen and (max-width: 960px) {
     width: 100%;
-    margin-bottom: 40%;
-
+    
   }
 `;
 const MarginContainer = styled.div`
@@ -51,6 +52,9 @@ const MarginContainer = styled.div`
 const TextContainer = styled.div`
   text-align: left;
   padding-left: 20%;
+  @media only screen and (max-width: 960px) {
+    padding: 4%;
+  }
 `;
 const Title = styled.h2`
   color: white;
@@ -63,15 +67,14 @@ const Text = styled.h4`
 
 export default function About() {
   return (
-    <>
-      <Container id="about">
+    <AboutPage id="about">
+      <Container>
         <LeftContainer>
           <TextContainer>
             <Slide bottom cascade>
               <Title>👋 Nice to meet You!</Title>{" "}
             </Slide>
 
-            <SubTitle></SubTitle>
             <Slide bottom cascade>
               <Text>
                 I'm Pegah, a technology enthusiast, blockchain newbie, artist,
@@ -116,18 +119,23 @@ export default function About() {
           <MarginContainer>
             <Slide bottom cascade>
               <Experience color="orange" title="Honda IT Engineering" />
-              <Experience
-                color="orange"
-                title="HypeDocs Software Development Apprentice"
-              />
+              <a target="_blank" href="https://hypedocs.co/">
+                <Experience
+                  color="orange"
+                  title="HypeDocs Software Development Apprentice"
+                />
+              </a>
+
               <Experience
                 color="orange"
                 title="Helen Carswell STEM Program Mentor"
               />
-              <Experience
-                color="orange"
-                title="My Bee Technologies Front End Developer"
-              />
+              <a target="_blank" href="http://mybeeapp.com/">
+                <Experience
+                  color="orange"
+                  title="My Bee Technologies Front End Developer"
+                />
+              </a>
             </Slide>
           </MarginContainer>
         </RightContainer>
@@ -143,6 +151,6 @@ export default function About() {
           ></Player>
         </Link>
       </Scroll>
-    </>
+    </AboutPage>
   );
 }

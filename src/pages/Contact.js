@@ -6,6 +6,14 @@ import axios from "axios";
 import { LinkedinWithCircle } from "@styled-icons/entypo-social/LinkedinWithCircle";
 import { MailWithCircle } from "@styled-icons/entypo-social/MailWithCircle";
 import { PhoneCall } from "@styled-icons/boxicons-solid/PhoneCall";
+import { Github } from "@styled-icons/bootstrap/Github";
+
+const GithubIcon = styled(Github)`
+  width: 60px;
+  color: white;
+  margin: auto;
+`;
+
 const LinkedInIcon = styled(LinkedinWithCircle)`
   width: 60px;
   color: white;
@@ -30,7 +38,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   @media only screen and (max-width: 700px) {
-    margin-top: 500px;
+    margin-top: 50%;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -108,14 +116,13 @@ const Submit = styled.input`
 const Button = styled.button`
   padding: 16px;
   background: transparent;
-  width: 10%;
+  width: 200px;
   border-radius 25px;
   border: 1px solid white;
   margin-top: 5%;
   margin: auto;
   @media only screen and (max-width: 700px) {
-    width: 50%;
-margin-top: 50%;
+    width: 200px;
   }
     `;
 const Message = styled.textarea`
@@ -167,6 +174,9 @@ function Contact(props) {
       </Button>
       <a href="https://www.linkedin.com/in/pegah-fallah/" target="_blank">
         <LinkedInIcon></LinkedInIcon>
+      </a>
+      <a href="https://github.com/pegahfallah" target="_blank">
+        <GithubIcon></GithubIcon>
       </a>
       <TitleContainer>
         {/* <EmailIcon></EmailIcon> */}
