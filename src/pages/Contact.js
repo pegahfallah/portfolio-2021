@@ -172,12 +172,18 @@ function Contact(props) {
           Resume
         </Text>
       </Button>
-      <a href="https://www.linkedin.com/in/pegah-fallah/" target="_blank">
-        <LinkedInIcon></LinkedInIcon>
-      </a>
-      <a href="https://github.com/pegahfallah" target="_blank">
-        <GithubIcon></GithubIcon>
-      </a>
+      <div>
+        <a
+          className="margin"
+          href="https://www.linkedin.com/in/pegah-fallah/"
+          target="_blank"
+        >
+          <LinkedInIcon></LinkedInIcon>
+        </a>
+        <a href="https://github.com/pegahfallah" target="_blank">
+          <GithubIcon></GithubIcon>
+        </a>
+      </div>
       <TitleContainer>
         {/* <EmailIcon></EmailIcon> */}
         <Text
