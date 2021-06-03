@@ -6,8 +6,11 @@ import About from "./pages/About";
 import NavBar from "./components/NavBar";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import { ThemeContextProvider } from "./components/ThemeProvider";
+
 function App() {
   return (
+    
     <div className="App">
       {/* <Switch>
         <Route exact path="/" component={HomePage} />

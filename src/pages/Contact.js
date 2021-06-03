@@ -167,7 +167,7 @@ function Contact(props) {
       <Button className="btn">
         <Text
           target="_blank"
-          href="https://docs.google.com/document/d/1Em-e7OOJIPWYti-UhfoFr8wu-OXrCmk6JmqR3OeHUFQ/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1a4MBCcgXg5BjGZ8akmM7qpQTBjLhTPxfBYUjllu9F-4/edit?usp=sharing"
         >
           Resume
         </Text>

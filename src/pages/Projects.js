@@ -35,6 +35,8 @@ const Card = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: row;
+  scroll-direction: horizontal;
+  margin-top: 2%;
   @media only screen and (max-width: 980px) {
     flex-direction: column;
     width: 100%;
@@ -52,7 +54,7 @@ const TitleContainer = styled.div`
 const TextTitle = styled.h2`
   color: white;
   text-align: left;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   @media only screen and (max-width: 960px) {
     text-align: center;
   }
@@ -84,17 +86,41 @@ function Projects(props) {
   return (
     <Container id="projects">
       <TextTitle>✨ Projects</TextTitle>
-
+      <Text>
+        Here are some of my recent projects. Check out more on my{" "}
+        <span class="rainbow">
+          <a target="_blank" href="https://devpost.com/pegahfallah">
+            devpost,{" "}
+          </a>
+        </span>
+        <span class="rainbow">
+          <a target="_blank" href="https://github.com/pegahfallah">
+            github,
+          </a>
+        </span>{" "}
+        or{" "}
+        <span class="rainbow">
+          <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1a4MBCcgXg5BjGZ8akmM7qpQTBjLhTPxfBYUjllu9F-4/edit?usp=sharing"
+          >
+            resume
+          </a>
+        </span>
+      </Text>
       <Content>
         <CardContainer>
           <Card className="card">
-            <a href="https://rockpaperscissorsai.netlify.app" target="_blank">
-              <Image src="./rps.png" width="250px"></Image>
+            <a href="https://mybee.app" target="_blank">
+              <Image src="./bee.jpeg" width="225px"></Image>
             </a>
           </Card>
           <TitleContainer>
-            <SubTitle> Rock Paper Scissors</SubTitle>
-            <Text>What I learned: Google Teachable Machine, React.JS</Text>
+            <SubTitle> My Bee </SubTitle>
+            <Text>
+              What I'm learning: Next.js, React Native, Redux, Google Cloud
+              Functions and more!
+            </Text>
           </TitleContainer>
         </CardContainer>
         <CardContainer>
@@ -110,7 +136,7 @@ function Projects(props) {
             <SubTitle> Cryptble</SubTitle>
             <Text>
               What I learned: Web Dev, blockchain fundamentals and NFTs, Hedera
-              Hashgraph tokenization APIs
+              tokenization API
             </Text>
           </TitleContainer>
         </CardContainer>
@@ -140,6 +166,17 @@ function Projects(props) {
           <TitleContainer>
             <SubTitle> Vagon.tech</SubTitle>
             <Text>What I learned: Vue.JS, Nuxt.js, Golang, CockroachDB</Text>
+          </TitleContainer>
+        </CardContainer>
+        <CardContainer>
+          <Card className="card">
+            <a href="https://rockpaperscissorsai.netlify.app" target="_blank">
+              <Image src="./rps.png" width="250px"></Image>
+            </a>
+          </Card>
+          <TitleContainer>
+            <SubTitle> Rock Paper Scissors</SubTitle>
+            <Text>What I learned: Google Teachable Machine, React.JS</Text>
           </TitleContainer>
         </CardContainer>
       </Content>
