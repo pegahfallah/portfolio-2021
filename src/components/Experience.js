@@ -64,7 +64,6 @@ function Experience(props) {
         {props.color === "orange" && <Title>{props.title}</Title>}
         {props.color === "pink" && <Title3>{props.title}</Title3>}
         {props.color === "purple" && <Title2>{props.title}</Title2>}
-
         {/* <SubTitle>{props.title}</SubTitle> */}
 
         {/* </Link> */}

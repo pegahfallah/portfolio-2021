@@ -42,7 +42,6 @@ function Logo() {
     setIsPaused(!isPaused);
   }, [isPaused]);
 
-  //   return useMemo(() => {
   return (
     <div className="controlled">
       <Lottie
@@ -54,7 +53,6 @@ function Logo() {
       />
     </div>
   );
-  //   }, [isStopped, isPaused, handleStop, handlePlay, handlePause]);
 }
 
 export default Logo;
