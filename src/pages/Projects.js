@@ -8,7 +8,7 @@ const Container = styled.div`
   margin-right: 8%;
   display: flex;
   flex-direction: column;
-
+  max-width: 100%;
   @media only screen and (max-width: 960px) {
     margin: auto;
     width: 100%;
@@ -35,8 +35,12 @@ const Card = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: row;
-  scroll-direction: horizontal;
   margin-top: 2%;
+  @media only screen and (max-width: 1400px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
   @media only screen and (max-width: 980px) {
     flex-direction: column;
     width: 100%;
@@ -62,8 +66,10 @@ const TextTitle = styled.h2`
 const Text = styled.p`
   color: white;
   text-align: left;
+  width: 80%;
   @media only screen and (max-width: 960px) {
     text-align: center;
+    width: 100%;
   }
 `;
 const SubTitle = styled.p`
