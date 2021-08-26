@@ -9,13 +9,13 @@ import { PhoneCall } from "@styled-icons/boxicons-solid/PhoneCall";
 import { Github } from "@styled-icons/bootstrap/Github";
 
 const GithubIcon = styled(Github)`
-  width: 60px;
+  width: 40px;
   color: white;
   margin: auto;
 `;
 
 const LinkedInIcon = styled(LinkedinWithCircle)`
-  width: 60px;
+  width: 40px;
   color: white;
   margin: auto;
 `;
@@ -192,7 +192,6 @@ function Contact(props) {
         >
           pegahfallah@outlook.com
         </Text>{" "}
-        <Text> 4167387278</Text>
       </TitleContainer>
       <TitleContainer>{/* <PhoneCallIcon></PhoneCallIcon> */}</TitleContainer>
       {/* <Card>

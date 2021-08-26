@@ -80,38 +80,31 @@ export default function About() {
             </Slide>
 
             <Slide bottom cascade>
-              <Text alt="About Pegah">
+              <Text>
                 I'm Pegah, a technology enthusiast, blockchain newbie, artist,
                 and avid coffee drinker. I study computer science at York
-                University in Toronto.
+                University in Toronto. I just completed an internship with Honda
+                as an applications engineer, working mostly with Java, SQL, and
+                data analytics to make sure cars are built right. This fall I
+                will be a front end developer with Deloitte!
               </Text>
               <Text>
-                I am currently on an internship with Honda as an applications
-                engineer, working mostly with Java, SQL, and data analytics to
-                make sure cars are built right. My passion lies in building
-                future-focussed, accessible, and impactful applications in Web3
-                ! Right now, you can find me developing the frontend of an NFT
-                web application for{" "}
+                {" "}
+                My passion lies in building future-focussed, accessible, and
+                impactful applications. I am a
                 <span className="rainbow">
-                  <a
-                    href="https://www.linkedin.com/company/layer-technologies/"
-                    target="_blank"
-                  >
-                    Layer Technologies.
+                  {" "}
+                  <a href="https://kernel.community/en/" target="_blank">
+                    Kernel Block 3{" "}
                   </a>
-                </span>{" "}
-              </Text>
-              <Text>
-                I love to learn. Whenever I hear a about a new framework or tech
-                term, I add it to my reading list. You can find me exploring the
-                applications of Blockchain, learning
-                <code> Clarity,</code>
-                bringing designs to life with
-                <code> Javascript, HTML, and CSS, </code>working with modern
-                frameworks like <code>React,</code> <code>Next.js,</code>{" "}
-                <code>Vue.js</code> and more !
-              </Text>
-              <Text>
+                </span>
+                Fellow, and I am currently doing a blockchain development course
+                with{" "}
+                <span className="rainbow">
+                  <a href="https://bloom.fstvl.io/" target="_blank">
+                    Bloom.
+                  </a>{" "}
+                </span>
                 I have designed and developed with startups like{" "}
                 <span className="rainbow">
                   <a href="https://mybee.app" target="_blank">
@@ -125,7 +118,7 @@ export default function About() {
                   </a>
                 </span>{" "}
                 and I love contributing to cool projects, so feel free to reach
-                out!
+                out.
               </Text>
             </Slide>
           </TextContainer>
