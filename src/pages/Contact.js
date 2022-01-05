@@ -136,42 +136,8 @@ const Message = styled.textarea`
 `;
 
 function Contact(props) {
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    // axios({
-    //   method: "POST",
-    //   url: "http://localhost:3002/send",
-    //   data: name,
-    //   email,
-    //   message,
-    // }).then((response) => {
-    //   if (response.data.status === "success") {
-    //     alert("Message Sent.");
-    //     resetForm();
-    //   } else if (response.data.status === "fail") {
-    //     alert("Message failed to send.");
-    //   }
-    // });
-  };
-  const resetForm = () => {
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
   return (
     <Container id="contact">
-      <Button className="btn">
-        <Text
-          target="_blank"
-          href="https://docs.google.com/document/d/1a4MBCcgXg5BjGZ8akmM7qpQTBjLhTPxfBYUjllu9F-4/edit?usp=sharing"
-        >
-          Resume
-        </Text>
-      </Button>
       <div>
         <a
           className="margin"
@@ -184,46 +150,6 @@ function Contact(props) {
           <GithubIcon></GithubIcon>
         </a>
       </div>
-      <TitleContainer>
-        {/* <EmailIcon></EmailIcon> */}
-        <Text
-        //   target="_blank"
-        //   href="https://docs.google.com/document/d/1Em-e7OOJIPWYti-UhfoFr8wu-OXrCmk6JmqR3OeHUFQ/edit?usp=sharing"
-        >
-          pegahfallah@outlook.com
-        </Text>{" "}
-      </TitleContainer>
-      <TitleContainer>{/* <PhoneCallIcon></PhoneCallIcon> */}</TitleContainer>
-      {/* <Card>
-        <TextTitle>Say Hello</TextTitle>
-
-        <form onSubmit={handleSubmit}>
-          <Label>Name:</Label>
-
-          <Input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-
-          <Label>Email:</Label>
-
-          <Input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <Label>Message:</Label>
-
-          <Message
-            rows="10"
-            type="text"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <Submit className="btn" type="submit" value="Submit" />
-        </form>
-      </Card> */}
     </Container>
   );
 }

@@ -51,49 +51,8 @@ function NavBar(props) {
 
   return (
     <div className="container">
-      <Container>
-        <List className="header">
-          <li>
-            <Link
-              className="nav"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={800}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="nav"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={800}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="nav"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={800}
-            >
-              Contact
-            </Link>
-          </li>
-        </List>
-      </Container>
-      <Home>
-        <Logo></Logo>
-      </Home>
+      <Container></Container>
+      <Home></Home>
       <ContainerRight>
         <a target="_blank" href="https://www.linkedin.com/in/pegah-fallah">
           <LinkedIn></LinkedIn>
